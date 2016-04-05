@@ -100,7 +100,6 @@ $(document).ready(function() {
       $('#seznam-uporabnikov').append(divElementEnostavniTekst(uporabniki[i]));
     }
   });
-  
   socket.on('dregljaj', function() {
     $("#vsebina").jrumble();
     $("#vsebina").trigger('startRumble');
