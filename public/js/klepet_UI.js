@@ -117,6 +117,15 @@ $(document).ready(function() {
       $('#poslji-sporocilo').focus();
     });
   });
+<<<<<<< HEAD
+=======
+  socket.on('dregljaj', function() {
+    $("#vsebina").jrumble();
+    $("#vsebina").trigger('startRumble');
+    setTimeout(function() {
+      $("#vsebina").trigger('stopRumble'); }, 1500);
+  });
+>>>>>>> dregljaj
   
   setInterval(function() {
     socket.emit('kanali');
